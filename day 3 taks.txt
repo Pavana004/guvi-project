@@ -1,0 +1,77 @@
+1) Create your own resume data in JSON format:
+ 
+                     resume
+   {
+    "name": "pavan",
+    "email": "pavana004@gmail.com",
+    "phone": "7598483416",
+    "degree": "bsc cs",
+    "address": "ooty",
+    "postalCode": "643412",
+    "city": "gudalur",
+    "state": "the nilgiris"
+    "region": "indian"
+   }
+==================================================================================
+2) For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+for loops:
+
+
+var a = [ {"name":"pavan", "age": "27"}, {"name":"kumar", "age": "26"}];
+
+for(var i=0;i<=a.length;i++){
+    
+console.log(a);
+
+
+}
+
+
+for in:
+
+var a = [ {"name":"pavan", "age": "27"}, {"name":"kumar", "age": "26"}];
+
+for(var x in a){
+ 
+   console.log(a[x]);
+
+
+}
+
+for of:
+ 
+var a = [ {"name":"pavan", "age": "27"}, {"name":"kumar", "age": "26"}];
+
+for(var x of a){
+  
+  console.log(x);
+
+
+}
+
+
+forEach:
+
+var a = [ {"name":"pavan", "age": "27"}, {"name":"kumar", "age": "26"}];
+
+a.forEach(myFunction);
+
+
+function myFunction(item) 
+{
+
+ 
+   console.log(item);
+
+
+}
+
+
+
+
+
+
+
+
+
