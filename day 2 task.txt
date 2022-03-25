@@ -1,0 +1,56 @@
+1) Execute the below code and write your description in txt file:
+Input:
+console.log(typeof(1))  
+console.log(typeof(1.1))
+console.log(typeof('1.1'))
+console.log(typeof(true))
+console.log(typeof(null))
+console.log(typeof(undefined))
+console.log(typeof([]))
+console.log(typeof({}))
+console.log(typeof(NaN)) 
+
+Output:
+number
+
+number
+string
+boolean  
+object
+  
+undefined
+  
+object  
+object  
+number 
+
+undefined
+
+2) List 5 difference between Browser JS(console) v Nodejs:
+
+JS(console);
+   1) js programing language 
+   2) js can only run in browser
+   3) js is use for frontend development
+   4) js is use for client desire
+   5) js is used for writing scripts on the website
+
+Nodejs;
+   1) We can run Javascript outside the browser with the help of NodeJS 
+   2) nodejs is used for server side
+   3) nodejs use for difference machine language
+   4) nodejs is used for run javascript outside the browser
+   5) nodejs is used for web development 
+
+3) watch & summary 5 points  
+    1) tokenizer is use to start tag and end tag
+    2) dom tree is use for link js and link style css
+    3) he speak about how parsing is work html and js 
+    4) he speak about basic of html,js,css;
+    5) he teach how take note from browser 
+
+
+
+
+
+
