@@ -1,0 +1,50 @@
+1) Write a blog on Difference between HTTP1.1 vs HTTP2:
+
+
+                                    HTTP1.1
+
+             It allowed multiple requests/responses per TCP connection.
+             The client (browser) has to send a request to the server 
+             using the method (GET/POST/PUT/DELETE),we can conclude 
+             that multiple TCP connections are essential.
+             
+
+
+                                    HTTP2 
+               
+             The major feature that differentiates HTTP/2 from HTTP/1.1 is
+             the binary framing layer.As HTTP/2 supports multiple simultaneous
+             responses to the client’s initial GET request,the server provides the
+             required resource along with the requested HTML page.HTTP/2 supports 
+             full multiplexing for requests as well as responses over a single 
+             TCP connection.
+
+==============================================================================================
+
+2) Write a blog about objects and its internal representation in Javascript:
+
+
+             objects objects and its internal representation in Javascript
+              -----------------------------------------------------------
+              
+                  its collection of key and value,The values can 
+                  consist of properties and methods.may contain 
+                  all other JavaScript data types, such as strings
+                  numbers, and Booleans.Objects are more complex 
+                  and each object may contain any combination of 
+                  these primitive data-types as well as reference   
+                  data-types.
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
