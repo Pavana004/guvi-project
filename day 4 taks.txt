@@ -1,0 +1,72 @@
+1)How to compare two JSON have the same properties without order?
+
+
+  var obj1 = { name: "Person 1", age:5 };
+
+  var obj2 = { age:5, name: "Person 1" };
+ 
+ 
+  var a = JSON.stringify(obj1) === JSON.stringify(obj2);
+ 
+   console.log(a);
+
+2) Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
+         
+            const url = "https://restcountries.com/v3.1/all";
+            async function rest(){
+            const response = await fetch(url);
+            const data = await response.json();
+            for(var i of data )
+             console.log(i.flags);
+          }
+            rest();
+
+I use async and await function which not take in class session,,and i use fetch ....
+         
+     Async functions will always return a value.
+     It makes sure that a promise is returned and 
+     if it is not returned then javascript automatically wraps it in a promise
+     which is resolved with its value. 
+     Await: Await function is used to wait for the promise.....
+
+
+3) Use the same rest countries and print all countries name, region, sub region and population:
+
+
+                              
+                                  const url = "https://restcountries.com/v3.1/all";
+                                    async function rest(){
+                                    const response = await fetch(url);
+                                    const data = await response.json();
+                                   for(var i of data )
+                                  console.log(i.population,i.subregion,i.region,i.continents);
+                            }
+                             rest();
+                        
+
+
+========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
