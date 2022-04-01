@@ -1,0 +1,64 @@
+a) Write a “person” class to hold all the details.
+       
+ 
+ 
+                 class person{
+                 constructor(name,age,eduction,address){
+                   this.name = name;
+                   this.age = age;
+                   this.eduction = eduction;
+                   this.address = address;
+       }
+          printName = function(){
+               console.log(`name: ${this.name} age :${this.age} eduction :${this.eduction} address :${this.address}`);
+}
+}
+const details = new person ("pavan","27","bsc","ooty");
+details.printName();
+
+
+b) write a class to calculate uber price.
+
+
+class uber{
+                 constructor(km,hour){
+                   this.km = km;
+                   this.hour = hour;
+                   
+       }
+         cost = function(){
+               console.log(`cost: ${this.km*10} hours:${this.hour}`);
+}
+}
+const pay = new uber (50,"2hrs");
+pay.cost();
+
+
+
+c) https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+
+
+ class movies{
+                 constructor(arg){
+                   this.title = arg.title;
+                   this.studio = arg.studio;
+                   this.rating = arg.rating;
+       }
+          getPG = function(){
+               console.log(` title: ${this.title} studio : ${this.studio} rating:  ${this.rating}`);
+}
+}
+const detail = new movies({title:"Casino Royale", studio: "Eon Productions", rating:"Pg:3"});
+detail.getPG();
+
+
+
+
+
+
+
+
+
+
+
