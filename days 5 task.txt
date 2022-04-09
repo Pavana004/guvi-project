@@ -1,0 +1,371 @@
+1) Do the below programs in anonymous function & IIFE :
+
+----> a)  Print odd numbers in an array anonymous function :
+
+     var a = function(){
+ 
+         for(let i=0;i<=10;i++){
+
+            if( i % 2 !==0){
+   
+              console.log(i);
+
+           }
+       
+}
+
+}
+
+a();
+
+output:
+-------
+1
+3
+5
+7
+9
+  ----->          Print odd numbers in an array  IIFE :
+
+
+           (function(){
+ 
+            for(let i=0;i<=10;i++){
+ 
+                if( i % 2 !==0){
+   
+                  console.log(i);
+
+              }
+
+           }
+
+         })();
+
+output:
+-------
+1
+3
+5
+7
+9
+  
+b) Convert all the strings to title caps in a string array in anonymous function:
+         
+
+
+                       var title = function (str) {
+                       str = str.toLowerCase().split(' ');
+                       for (var i = 0; i < str.length; i++) {
+                       str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                        }
+                        return str.join(' ');
+                        }
+                         console.log(title("PAVAN KUMAR"));
+
+
+ -------->     title caps in a string array in IIFEfunction:
+                        
+                          
+       var arr = ["pavan","kumar"];
+       (function() {
+        for (var i = 0; i <= arr.length; i++) {
+        console.log(arr[i][0].toUpperCase() + arr[i].substr(1));
+        }
+        })();
+
+
+c) Sum of all numbers in an array in anonymous function:
+
+
+
+const num = [10, 20, 30, 40]; 
+var sum = function(a, b) {
+ return a + b;
+ }
+     sum = num.reduce(sum)
+console.log(sum);
+
+output:
+------
+
+100
+
+------------------------> Sum of all numbers in an array in IIFE function:
+
+
+                     const arr = [10,20,30,40,50];
+                      (function() {
+                       let sum = 0;
+                       for (var i = 0; i < arr.length; i++){
+                       sum += arr[i];
+                        }
+                        console.log(sum);
+                        return sum;
+                         })();
+
+
+
+
+
+-----------> d) Return all the prime numbers in an array in anonymous function :
+
+
+           var a = function(){
+ 
+         for(let i=0;i<=10;i++){
+
+            if( i % 2 ==0){
+   
+              console.log(i);
+
+           }
+       
+}
+
+}
+
+a();
+
+output:
+-------
+0
+2
+4
+6
+8
+10
+
+============> Return all the prime numbers in an array in IIFE function :
+                   
+
+            (function(){
+ 
+            for(let i=0;i<=10;i++){
+ 
+                if( i % 2 !==0){
+   
+                  console.log(i);
+
+              }
+
+           }
+
+         })();
+
+output:
+-------
+0
+2
+4
+6
+8
+10
+
+
+
+e) Return all the palindromes in an array in anonymous function :
+
+                 var palindrome = function(str){
+ return str.split("").reverse().join("");
+ 
+                 }
+ 
+                 console.log(palindrome("PAVAN"));
+
+
+--------------> All the palindromes in an array in IIFE function :
+            
+               
+               
+                 (function(str){
+                    str1 = str.split("").reverse().join("");
+                   console.log(str1); 
+                  })("pavan")
+
+
+f) Return median of two sorted arrays of the same size in anonymous function:
+
+
+               var arr = [1, 2, 3, 6, 8,];
+               var arr1=[6, 1, 9, 10, 12];
+               var sortArr= function(arr,arr1){
+                var concat= arr.concat(arr1);
+                console.log(concat);
+                var length= concat.length;
+                if(length%2==1){
+                console.log(concat[(length/2)-.5]);
+                return concat[(length/2)-.5];
+              }
+              else
+                 console.log((concat[length/2]+concat[(length/2)-1])/2);
+                 return (concat[length/2]+concat[(length/2)-1])/2;
+  
+             }
+             sortArr(arr,arr1)
+
+
+---------------> Return median of two sorted arrays of the same size in IIFE function:
+
+               var arr = [1, 2, 3, 6, 8,];
+               var arr1=[6, 1, 9, 10, 12];
+               (function(arr,arr1){
+                var concat= arr.concat(arr1);
+                console.log(concat);
+                var length= concat.length;
+                if(length%2==1){
+                console.log(concat[(length/2)-.5]);
+                return concat[(length/2)-.5];
+              }
+              else
+                 console.log((concat[length/2]+concat[(length/2)-1])/2);
+                 return (concat[length/2]+concat[(length/2)-1])/2;
+  
+             })(arr,arr1);
+             
+
+g) Remove duplicates from an array in anonymous function :
+
+
+                            const array = [1, 2, 3, 2, 3];
+                            var deplicates = function (){
+    
+                               let removeArr = [];
+                               for(let i of array) {
+                               if(removeArr.indexOf(i) === -1) {
+                                removeArr.push(i);
+                                }
+                              }
+                              console.log(removeArr);
+                              }
+                             deplicates();
+
+
+------------------>  Remove duplicates from an array in IIFE function:
+           
+
+                       
+                  const array = [1, 2, 3, 2, 3];
+                  (function (arr){
+    
+                   let removeArr = [];
+                   for(let i of array) {
+                   if(removeArr.indexOf(i) === -1) {
+                   removeArr.push(i);
+                   }
+                  }
+                  console.log(removeArr);
+                 })();
+
+
+h) Rotate an array by k times in anonymous function:
+
+
+                var a = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+                var k = 3;
+ 
+                var rotate = function (arr,nums){
+                 for(i=0;i<nums;i++){
+                 arr.unshift( arr.pop());
+                 console.log(arr);
+                 }
+             }
+             rotate(a,k);
+
+
+---------------> Rotate an array by k times in anonymous function;
+
+               var a = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+               var k = 3;
+ 
+               (function (arr,nums){
+               for(i=0;i<nums;i++){
+               arr.unshift( arr.pop());
+               console.log(arr);
+               }
+               })(a,k);
+
+======================================================================================================
+
+2) Do the below programs in arrow functions:
+
+
+
+     
+a) Print odd numbers in an array:
+
+         var a = ()=>{
+
+         for(let i=0;i<=10;i++){
+
+ 
+          if( i % 2 !==0){
+   
+              
+          console.log(i);
+
+           
+          }
+       
+          
+}
+
+}
+
+a();
+
+
+
+b) Convert all the strings to title caps in a string array:
+
+
+                  var title =(str)=> {
+                  str = str.toLowerCase().split(' ');
+                  for (var i = 0; i < str.length; i++) {
+                   str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                   }
+                   return str.join(' ');
+                   }
+                   console.log(title("PAVAN KUMAR"));
+
+
+c) Sum of all numbers in an array: 
+
+
+           const num = [10, 20, 30, 40]; 
+           var sum = (a, b)=>{
+           return a + b;
+           }
+            sum = num.reduce(sum)
+            console.log(sum);
+
+d) Return all the prime numbers in an array:
+ 
+
+            var a = ()=>{
+    
+            for(let i=0;i<=10;i++){
+    
+            if( i % 2 ==0){
+    
+            console.log(i);
+            
+}}
+             
+}
+a();
+
+e) Return all the palindromes in an array:
+
+  var palindrome = (str)=>{
+ return str.split("").reverse().join("");
+ }
+console.log(palindrome("PAVAN"));
+
+
+
+
+
+
+
+
