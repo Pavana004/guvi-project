@@ -1,0 +1,106 @@
+a) Get all the countries from Asia continent /region using Filter function
+                 
+
+                            Asia continent:
+                           ================
+
+            const url = "https://restcountries.com/v3.1/all";
+            async function rest(){
+            const response = await fetch(url);
+            const data = await response.json();
+            var output = data.filter(data=> data.continents=='Asia')
+            for(i=0;i<output.length;i++){
+                 console.log(output[i]);
+            }
+          }
+            rest();
+
+
+
+                           Asia region 
+                          ==============
+
+
+            const url = "https://restcountries.com/v3.1/all";
+            async function rest(){
+            const response = await fetch(url);
+            const data = await response.json();
+            var output = data.filter(data=> data.region=='Asia')
+            for(i=0;i<output.length;i++){
+                 console.log(output[i]);
+            }
+          }
+            rest();
+
+
+
+
+b) Get all the countries with a population of less than 2 lakhs using Filter function:
+
+
+
+
+            const url = "https://restcountries.com/v3.1/all";
+            async function rest(){
+            const response = await fetch(url);
+            const data = await response.json();
+            var output = data.filter(data=> data.population <= 200000)
+            for(i=0;i<output.length;i++){
+                 console.log(output[i]);
+            }
+          }
+            rest();
+
+c) Print the following details name, capital, flag using forEach function:
+
+
+
+            const url = "https://restcountries.com/v3.1/all";
+            async function rest(){
+            const response = await fetch(url);
+            const data = await response.json();
+            data.forEach(i => {
+               console.log(i.continents,i.region,i.flags);
+            });
+             
+          }
+            rest();
+
+
+
+d) Print the total population of countries using reduce function:
+
+            const url = "https://restcountries.com/v3.1/all";
+            async function rest(){
+            const response = await fetch(url);
+            const data = await response.json();
+            var output = data.reduce(function(a,b){
+                  return {...a,[b.population]:a}
+            });
+               console.log(output)
+            
+          }
+            rest();
+
+   
+e) Print the country which uses US Dollars as currency:
+
+
+            const url = "https://restcountries.com/v3.1/all";
+            async function rest(){
+            const response = await fetch(url);
+            const data = await response.json();
+            var output = data.filter(data=> data.currencies=="United States dollar")
+            for(i=0;i<output.length;i++){
+                 console.log(output[i]);
+            }
+          }
+            rest();
+
+
+
+
+
+
+
+
