@@ -1,0 +1,127 @@
+calculator 
+https://docs.google.com/document/d/1VyZJG0KZAoZEs3h_lpP65XPekNqsbFp8bouOZSWsOTc/edit:
+
+                      
+                                CALCULATOR
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(37, 26, 28);
+            font-family: Arial, Helvetica, sans-serif;
+            outline: none;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator{
+            background-color: whitesmoke;
+            padding: 15px;
+            border-radius: 30px;
+            box-shadow: inset 5px 5px 12px whitesmoke,
+                              5px 5px 12px rgb(73, 2, 2);
+            display: grid;
+            grid-template-columns: repeat(4,68px);
+        }
+        input{
+            grid-column: span 4;
+            height: 70px;
+            width: 260px;
+            background-color: rgb(102, 3, 3);
+            box-shadow: inset -15px -15px 12px rgb(53, 2, 2),
+                         inset 5px 5px 12px rgb(49, 3, 3);
+            border-radius: 10px;
+            border: none;
+            color: rgb(233, 221, 221);
+            font-size: 50px;
+            text-align: end;
+            margin: auto; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        button{
+            height: 48px;
+            width: 48;
+            background-color: white;
+            box-shadow: -5px -5px 12px wheat,
+                         5px 5px 12px black;
+            border:none;
+            margin: 8px;
+        }
+        .result{
+            width: 115px;
+            border-radius: 40px;
+            background-color: white;
+            box-shadow: -5px -5px 12px wheat,
+                         5px 5px 12px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="output">
+            <button type="button" class="btn btn-light" onclick="clr()">C</button>
+            <button type="button" class="btn btn-light" onclick="del()">del</button>
+            <button type="button" class="btn btn-light" onclick="display('.')">.</button>
+            <button type="button" class="btn btn-light" onclick="display('*')">*</button>
+            <button type="button" class="btn btn-light" onclick="display('7')">7</button>
+            <button type="button" class="btn btn-light" onclick="display('8')">8</button>
+            <button type="button" class="btn btn-light" onclick="display('9')">9</button>
+            <button type="button" class="btn btn-light" onclick="display('/')">/</button>
+            <button type="button" class="btn btn-light" onclick="display('4')">4</button>
+            <button type="button" class="btn btn-light" onclick="display('5')">5</button>
+            <button type="button" class="btn btn-light" onclick="display('6')">6</button>
+            <button type="button" class="btn btn-light" onclick="display('-')">-</button>
+            <button type="button" class="btn btn-light" onclick="display('1')">1</button>
+            <button type="button" class="btn btn-light" onclick="display('2')">2</button>
+            <button type="button" class="btn btn-light" onclick="display('3')">3</button>
+            <button type="button" class="btn btn-light" onclick="display('+')">+</button>
+            <button type="button" class="btn btn-light" onclick="display('0')">0</button>
+            <button type="button" class="btn btn-light" onclick="display('00')">00</button>
+            <button type="button" class="result" onclick="calculate('=')">=</button>
+
+        </div>
+    </div>
+  <script>
+      let outputs=document.getElementById("output");
+      function display(num){
+        outputs.value +=num;
+      }
+
+       let calculate = ()=>{
+           try{
+            outputs.value=eval(outputs.value);
+           }
+            catch(err){
+                alert("only number allowed")
+            }
+       }
+       function clr(){
+           outputs.value = "";
+       }
+       function del(){
+           outputs.value = outputs.value.slice(0, -1);
+       }
+  </script>
+
+</body>
+
+</html>
