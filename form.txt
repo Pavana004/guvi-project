@@ -1,0 +1,134 @@
+
+HTML Forms ....
+https://docs.google.com/document/d/1I8qIE7_ri5Q_1QqkxJ7rdlRmGnWWW7zCa7BXrwAi8hI/edit
+
+
+
+                                 DOM Manipulation With Forms
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>pagination!</title>
+  <style>
+    body {
+      background-color: rgb(240, 240, 240);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Foods form</a>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <form class="row g-3" onsubmit="Creatusers(event)">
+      <div class="col-md-3">
+        <label for="validationDefault01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationDefault01" value="fname" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationDefault02" value="lname" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault03" class="form-label">Address</label>
+        <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label">Pincode</label>
+        <input type="text" class="form-control" id="validationDefault04" required>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Foods-1</label>
+        <select class="form-select" id="validationDefault05" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Indian</option>
+          <option>Kerala</option>
+          <option>Andhra</option>
+          <option>Italy</option>
+          <option>China</option>
+
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Foods-2</label>
+        <select class="form-select" id="validationDefault08" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Indian</option>
+          <option>Kerala</option>
+          <option>Andhra</option>
+          <option>Italy</option>
+          <option>China</option>
+
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">State</label>
+        <select class="form-select" id="validationDefault06" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Tamil nadu</option>
+          <option>Gujarat</option>
+          <option>Assam</option>
+          <option>Andhra Pradesh</option>
+          <option>Kerala</option>
+          <option>Karnataka</option>
+          <option>Rajasthan</option>
+          <option>Delhi</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Country</label>
+        <select class="form-select" id="validationDefault07" required>
+          <option selected disabled value="">Choose...</option>
+          <option>India</option>
+          <option>China</option>
+          <option>United States</option>
+          <option>Indonesia</option>
+          <option>Russia</option>
+          <option>Germany</option>
+          <option>London</option>
+          <option>Italy</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+
+  </div>
+  <script>
+    function Creatusers(evt) {
+      evt.preventDefault();
+      const validationDefault01 = document.getElementById("validationDefault01").value;
+      const validationDefault02 = document.getElementById("validationDefault02").value;
+      const validationDefault03 = document.getElementById("validationDefault03").value;
+      const validationDefault04 = document.getElementById("validationDefault04").value;
+      const validationDefault05 = document.getElementById("validationDefault05").value;
+      const validationDefault06 = document.getElementById("validationDefault06").value;
+      const validationDefault07 = document.getElementById("validationDefault07").value;
+      const validationDefault08 = document.getElementById("validationDefault08").value;
+
+      console.log(validationDefault01, validationDefault02, validationDefault03, validationDefault04, validationDefault05, validationDefault06, validationDefault07,validationDefault08)
+
+    }
+  </script>
+</body>
