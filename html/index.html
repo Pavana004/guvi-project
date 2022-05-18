@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>task</title>
+  <style>
+   
+    .google {
+      text-decoration: none;
+      color: black;
+    }
+
+    .qes {
+      font-weight: bold;
+    }
+    .title{
+      text-align: center;
+      background-color: red;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .health{
+      text-align: center;
+      font-weight: bold;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col">
+        <p class="qes">3.Design a contact us form with all fields as required.</p>
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+          <br>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Countries</option>
+            <option value="1">US</option>
+            <option value="2">UK</option>
+            <option value="3">Australia</option>
+          </select>
+          <br>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Subject</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+        <p class="qes"> 4.Use certain HTML elements to display the following in a HTML page.</p>
+        <ul>
+          <li>Programming Language</li>
+          <ul>
+            <li>JavaScript</li>
+            <p>a.Angular</p>
+            <p>b.React</p>
+            <p>c.Vue.js</p>
+          </ul>
+          <ul>
+            <li>Python</li>
+            <p>a.Django Framework</p>
+            <p>b.Flask Framework</p>
+          </ul>
+          <ul>
+            <li>Java</li>
+            <p>a.Spring</p>
+            <p>b.Maven</p>
+            <p>c.Hibernate</p>
+          </ul>
+          <li>Database</li>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>CanSandra</li>
+          </ul>
+        </ul>
+
+      </div>
+      <div class="col">
+        <p class="qes"> 5. Create an element that helps you to open the https://google.com in separate new tab.</p>
+        <a href="https://www.google.com/" class="google ">Google</a>
+        <br>
+        <br>
+        <p class="qes"> 6.In the form, add two radio buttons with grouping them for employee type(Salaried and own
+          business)</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Salaried
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            own business
+          </label>
+        </div>
+        <br>
+        <p class="qes">9.Write HTML input tags snippet to show default values for all Form elements.</p>
+        <form>
+          <div class="col">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Pavan" required>
+          </div>
+          <div class="col">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Kumar" required>
+          </div>
+        </form>
+          <br>
+      <p class="qes">10.In your, HTML page add the below line and Highlight it without using any CSS.</p>
+         <ul>
+           <li>"HTML & CSS is awesome"
+          </li>
+         </ul>
+
+      </div>
+     
+      <div class="col">
+       <p class="qes">8.Use the table tag to design given image Click here.</p>
+         <h6 class="health">Healthy Chart</h6>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">State of Health</th>
+              <th scope="col">Min</th>
+              <th scope="col">max</th>
+              <th scope="col">After Eating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Healthy</th>
+              <td>70</td>
+              <td>100</td>
+              <td>Less than 140</td>
+            </tr>
+            <tr>
+              <th scope="row">Pre-Diabetes</th>
+              <td>101</td>
+              <td>126</td>
+              <td>140 to 120</td>
+            </tr>
+            <tr>
+              <th scope="row">Diabetes</th>
+              <td>More than 126</td>
+              <td>N\A</td>
+              <td>More than 200</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p class="qes">7.Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)</p>
+        <form>
+          <div class="row">
+            <h6 class="title">Yes I Want to Subscribe to Mag-O-Zine</h6>
+            <div class="col">
+              <input type="text" class="form-control"  aria-label="First name">
+              <p>First name</p>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control"  aria-label="Last name">
+              <p>Last name</p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" aria-label="Address">
+              <p>Address</p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control border-none"  aria-label="City">
+              <p>City</p>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control"  aria-label="State">
+              <p>State</p>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control"  aria-label="Zip">
+              <p>Zip</p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <p>Subscribe for:</p>
+            </div>
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">1 year($19.95)</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-check ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">2 year($35.00)</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <p>Send me more information about</p>
+          <div class="form-check ms-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Computer-zine
+            </label>
+          </div>
+          <div class="form-check ms-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Fishing-Zine
+            </label>
+          </div>
+          <div class="form-check ms-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Cat=O=Zine
+            </label>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
