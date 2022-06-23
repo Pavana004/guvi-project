@@ -1,0 +1,36 @@
+-- Find all the topics and tasks which are thought in the month of October;
+      
+               db.Zenclass.find({ topics : { $in: ["October"] }});
+               db.Zenclass.find({ tasks : { $in: ["October"] }});
+
+-- Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020 
+
+               db.Zenclass.find({ $and: [{ "15 oct-2020" }, { " 31-oct-2020" }] });      
+
+-- Find all the company drives and students who are appeared for the placement.                   
+
+               db.Zenclass.find({ $and: [{ "drives " }, { "students " }] });     
+              
+-- Find the number of problems solved by the user in codekata             
+
+                db.codekata.aggregate{[
+                     {
+                    $group: { 
+                        sumAge: { $sum: "$user" },
+                       
+                    } 
+                    },
+                ]}
+
+--    Find all the mentors with who has the mentee's count more than 15             
+
+               db.codekata.aggregate{[
+                     {
+                    $group: { 
+                        count: { $sum: 15 },
+                       
+                    } 
+                    },
+                ]}
+
+--  Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020               
